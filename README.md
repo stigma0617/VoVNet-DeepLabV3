@@ -29,7 +29,7 @@ This is a pytorch implementation of [DeepLabV3](https://arxiv.org/abs/1706.05587
 |**VoV-39**    |**75.71**|     **19**          |        **1901**   |              **3.1**          | [link](https://www.dropbox.com/s/oqqozntgrowmfb1/deeplab_vovnet39_pascal_v3_bn_lr7e-3_epoch50.pth)
 |  ResNet-101  | 76.81 |           32          |        2865       |              15.8             | [link](https://www.dropbox.com/s/vqpifempofpujvr/deeplab_resnet101_pascal_v3_bn_lr7e-3_epoch50.pth)
 | DenseNet-161 | 76.13 |           49          |        4523       |              8.3              | [link](https://www.dropbox.com/s/t3au8o1n7u6ijk6/deeplab_densenet161_pascal_v3_bn_lr7e-3_epoch50.pth)
-|**VoV-57**    |**77.4**|     **25**          |        **2251**   |              **4.2*            | [link](https://www.dropbox.com/s/ykfj7enw9x5fhv6/deeplab_vovnet57_pascal_v3_bn_lr7e-3_epoch50.pth)
+|**VoV-57**    |**77.4**|     **25**          |        **2251**   |              **4.2**            | [link](https://www.dropbox.com/s/ykfj7enw9x5fhv6/deeplab_vovnet57_pascal_v3_bn_lr7e-3_epoch50.pth)
 
 
 ### ImageNet pretrained weight
@@ -69,6 +69,7 @@ unzip list.zip
 ### Training
 
 Specifying a backbone network with ```--backbone```,
+
 For VoVNet-39, ```--backbone vovnet39```
 ```bash
 python main.py --train --exp bn_lr7e-3 --epochs 50 --base_lr 0.007 --backbone vovnet39
